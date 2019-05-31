@@ -37,7 +37,6 @@ public class WeatherConfig {
     private RestTemplateBuilder builder;
 
     @Bean
-    @LoadBalanced
     public RestTemplate restTemplate(){
         return builder.build();
     }
